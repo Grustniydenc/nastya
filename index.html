@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grustniy_Denc</title>
+
+  <!-- Пиксельный шрифт -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Press Start 2P', monospace;
+      cursor: url('https://cur.cursors-4u.net/cursors/cur-9/cur833.cur'), auto;
+    }
+
+    html, body {
+      height: 100%;
+      background: black;
+      overflow: hidden;
+    }
+
+    body {
+      background: url('background.gif') center/cover no-repeat fixed;
+      position: relative;
+    }
+
+    .window {
+      position: absolute;
+      bottom: 25%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+      max-width: 360px;
+      background: #e0e0e0;
+      border: 2px solid #000;
+      box-shadow: 0 0 15px rgba(255, 0, 90, 0.5);
+      z-index: 10;
+    }
+
+    .window-header {
+      background: linear-gradient(to right, #000080, #0000cd);
+      color: #fff;
+      padding: 6px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 10px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 4px;
+    }
+
+    .buttons div {
+      width: 12px;
+      height: 12px;
+      background: #fff;
+      border: 1px solid #000;
+    }
+
+    .window-body {
+      background-color: #1e1e1e;
+      padding: 22px 16px 25px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .window-body h1 {
+      font-size: 16px;
+      margin-bottom: 14px;
+      color: #ff0050;
+      text-shadow: 0 0 4px rgba(255, 0, 90, 0.8);
+    }
+
+    .window-body .description {
+      font-size: 10px;
+      color: #ccc;
+      text-align: center;
+      margin-bottom: 20px;
+      text-shadow: 0 0 1px rgba(255, 255, 255, 0.2);
+    }
+
+    .socials {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .socials a {
+      width: 30px;
+      height: 30px;
+      border-radius: 4px;
+      background: #1e1e1e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 4px rgba(255, 0, 80, 0.3);
+      text-decoration: none;
+      border: 1px solid #444;
+      transition: 0.3s;
+    }
+
+    .socials a:hover {
+      transform: scale(1.1);
+      background: #2a2a2a;
+    }
+
+    .socials i {
+      font-size: 16px;
+      color: #fff;
+    }
+
+    @media (max-width: 500px) {
+      .window {
+        max-width: 320px;
+        bottom: 20%;
+      }
+
+      .window-body h1 { font-size: 14px; }
+      .window-body .description { font-size: 9px; }
+      .socials a {
+        width: 28px;
+        height: 28px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="window">
+    <div class="window-header">
+      <span>Grustniy_Denc.exe</span>
+      <div class="buttons">
+        <div></div><div></div><div></div>
+      </div>
+    </div>
+    <div class="window-body">
+      <h1>GRUSTNIY_DENC</h1>
+      <div class="description">
+        Кинообзоры · Косплей · г. Краснодар
+      </div>
+
+      <div class="socials">
+        <a href="https://t.me/Grustniydenc" target="_blank"><i class="bi bi-telegram"></i></a>
+        <a href="https://youtube.com/channel/UCk93alKcWaLosLkhDQYnU1w" target="_blank"><i class="bi bi-youtube"></i></a>
+        <a href="https://www.tiktok.com/@grustniy_denc" target="_blank"><i class="bi bi-music-note-beamed"></i></a>
+        <a href="https://www.instagram.com/p/CdNigXrKSWJ/?igshid=YmMyMTA2M2Y=" target="_blank"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
